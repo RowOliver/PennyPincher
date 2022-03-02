@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheets" href="style.css">
+    
+    
+    <title>Penny Pincher</title>
+</head>
+<body>
+    <div class="wrapper">
+      <div class="total">
+          <div class="total">Your total is: $<span id="total">0</span></div>
+          </div>
+        </div>
+
+      <div class="form">
+            <input type="text" id="trans-name" placeholder="Name of Transaction"/>
+            <input type="number" min="0" id="trans-name" placeholder="Transaction Amount"/>
+            <button id="add-btn"><i class="fa fa-plus button"></i>Add Funds</button>
+            <button id="add-btn"><i class="fa fa-plus button"></i>Subtract Funds</button>
+            <p class="error"></p>
+      </div> 
+      
+      <div class="transactions">
+          <table>
+              <thead>
+                  <th>Transaction</th>
+                  <th>Amount</th>
+              </thead>
+              <tbody id=""tbody>
+
+              </tbody>
+          </table>
+      </div>
+
+      <canvas id="myChart"></canvas>
+    
+      <script src="db.js"></script>
+      <script src="index.js"></script>
+
+
+
+
+</body>
+</html>
